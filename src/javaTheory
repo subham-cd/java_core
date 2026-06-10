@@ -1,0 +1,67 @@
+// // <!--
+// // JIT is responsible for converting byte code to machine readable format
+// // jit is part of jvm
+// // jvm is part of JRE
+
+// // JRE=>
+// // API
+// // jvm
+// // Garbage collector
+
+
+
+// // jdk->
+
+// // API
+// // compiler
+
+// // string pool : it is a optimised area for string
+
+
+// // protected visible only within classes and package and child class also
+// // private visible only inside the curly braces or classes
+
+
+// // final class can not be inherited and final method cannot be overriden and final variable is const
+
+// //static member single copy and it can be accessed without insantiate
+
+
+// // if we made a class where it all have static method and if we inherit that class then we can access the static method without creating object of that class then what will happen if we create object of that class and access the static method so the answer is that we can access the static method by creating object of that class but it is not recommended because static method is not related to object and it is related to class so we should access static method by using class name rather than object name
+
+// //what does it mean by inheritance in java
+// // inheritance is a mechanism in java by which one class can inherit the properties and behaviors of another class. The class that inherits is called the subclass or child class, and the class being inherited from is called the superclass or parent class. Inheritance promotes code reusability and establishes a natural hierarchical relationship between classes. It allows the subclass to override methods of the superclass to provide specific implementations, and it can also add new methods and fields to enhance functionality. In Java, inheritance is achieved using the "extends" keyword.
+
+// //which memeber of the class is not inherited by the subclass
+// // In Java, the members of a class that are not inherited by the subclass include: -->
+
+
+// <!-- //static class is not inherit -->
+
+// <!-- //those who belong to object they can be inherit and but those who belong to class they cannot be inherit -->
+
+
+//inside inheritance what are the contructor hirarchy
+// In Java, when a subclass is instantiated, the constructor hierarchy is as follows:
+// 1. The constructor of the superclass (parent class) is called first. This is done implicitly by the Java compiler, and it happens before the body of the subclass constructor is executed. If the superclass has a no-argument constructor, it will be called automatically. If the superclass does not have a no-argument constructor, the subclass must explicitly call one of the superclass constructors using the "super" keyword.
+// 2. After the superclass constructor has been executed, the constructor of the subclass (child class) is called. This is where the specific initialization for the subclass takes place. The subclass constructor can also call the superclass constructor using the "super" keyword to ensure that the superclass is properly initialized before the subclass adds its own initialization logic.
+
+//java code
+//class A {
+
+//    A() {
+//        System.out.println("A class constructor");
+//    }
+// class B extends A {
+
+//     B() {
+//         System.out.println("B class constructor");
+//     }
+// }
+
+// }
+
+////new keyword is used to create object of class and it is used to call constructor of class and it is used to allocate memory for object of class /
+//how much memory is allocated for object of class
+// The amount of memory allocated for an object of a class in Java depends on several factors, including the class's fields (instance variables), the size of the object header, and any additional memory overhead for the object.
+
