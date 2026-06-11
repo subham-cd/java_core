@@ -65,3 +65,47 @@
 //how much memory is allocated for object of class
 // The amount of memory allocated for an object of a class in Java depends on several factors, including the class's fields (instance variables), the size of the object header, and any additional memory overhead for the object.
 
+
+
+// two unrelated entity if want to commnuicate it is done by interface
+
+
+Holder h = ()-> System.out.println("Holder lambda view");
+h.viewQuote();
+
+
+SAM=> SIngle abstract method (java 7)
+Functional interface => an interface with a single abstract method is called functional interface
+lambada is design for functional interface
+
+////////////////////////////
+
+categories of Functional interface
+
+-> supplyer => it is type of FI it takes nothing returns a value
+ example
+int random();
+
+->consumer  it is type of FI it takes nothing returns a nothing
+Example
+void print(String s);
+
+bi-consumer
+void print(String s,int age);
+
+
+->predicate => its takes a value and return true or false
+example
+boolean isNegative(int i);
+
+bi-prediacte
+boolean fullyDivisible(int a,int b);
+
+
+->function => a method takes a value and return a value is called function
+int square(int a)
+
+
+bi-function
+int sum(int a,int b);
+
