@@ -11,5 +11,6 @@ public class RegEx {
         System.out.println(name.matches(nameRegex));
         System.out.println(cell.matches(cellRegex));
         System.out.println(email.matches(emailRegex));
+
     }
 }

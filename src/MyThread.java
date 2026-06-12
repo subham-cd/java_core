@@ -1,0 +1,37 @@
+public class MyThread extends Thread{
+    private int data;
+
+
+    @Override
+    public void run(){
+        Thread t = Thread.currentThread();
+        String name = t.getName();
+        for (int c = 1; c <=50; c++) {
+            System.out.println(name+":"+ ++data);
+
+        }
+
+    }
+
+    public static void main(String[] args) {
+        MyThread mt1 = new MyThread();
+        mt1.setName("first");
+
+
+        MyThread mt2 = new MyThread();
+        mt2.setName("second");
+
+        MyThread mt3= new MyThread();
+        mt3.setName("third");
+
+        mt1.start();
+        mt2.start();
+        mt3.start();
+
+        String name = Thread.currentThread().getName();
+        for (int c = 1; c <= 50; c++) {
+            System.out.println(name + " : "+c);
+
+        }
+    }
+}

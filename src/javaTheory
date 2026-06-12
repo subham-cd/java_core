@@ -109,3 +109,72 @@ int square(int a)
 bi-function
 int sum(int a,int b);
 
+
+//thread class represents a thread of execution
+
+code to be execute in a seprate thread must be implemented as run() of runnable
+
+There are 2 ways of create threads in java
+
+when muliple thread working on different stake then we call thread
+
+-> class MyThread extends Thread {
+
+       @Override
+       public void run() {
+           System.out.println("Thread is running");
+       }
+   }
+
+   public class Main {
+       public static void main(String[] args) {
+           MyThread t1 = new MyThread();
+           t1.start();   // New thread start hoga
+       }
+   }
+   Thread class ko inherit karna padta hai.
+   Jo code thread mein execute karna hai, wo run() method ke andar likhte hain.
+   start() call karne par JVM internally run() ko naye thread mein execute karti hai.
+
+
+   //////////////
+
+   class MyRunnable implements Runnable {
+
+       @Override
+       public void run() {
+           System.out.println("Thread is running");
+       }
+   }
+
+   public class Main {
+       public static void main(String[] args) {
+           MyRunnable obj = new MyRunnable();
+
+           Thread t1 = new Thread(obj);
+
+           t1.start();
+       }
+   }
+
+   Runnable interface mein sirf ek method hota hai: run().
+   Pehle Runnable object banao.
+   Phir us object ko Thread constructor mein pass karo.
+   Uske baad start() call karo.
+
+
+when there is common stake for multiplethread then we use runnable
+
+
+
+types of priorty in java
+
+min priority
+normal priority
+max priority
+
+
+
+Synchronised
+
+when a thread execute in a synchronized manner it aquire a  lock our the whole object so no other thread call anythng method on this object unless the lock is released;
