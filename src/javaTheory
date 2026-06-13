@@ -178,3 +178,26 @@ max priority
 Synchronised
 
 when a thread execute in a synchronized manner it aquire a  lock our the whole object so no other thread call anythng method on this object unless the lock is released;
+
+
+Collections : its provide all industry used  data structure in the form of java class.
+
+Shortfalls of an array is , its is fixed in size
+--Solution to this problem is DS
+--popular data structures are linkedlist,stack,queue,binary tree
+-It is intruduced to overcome the shortfalls of arrays
+-it provides classed which are implementaions of various well known data sturcutures
+
+
+
+
+
+Collectons(I): its represnts collection of objects
+one object per elements/node
+
+set(I):
+-Inherits behaviour of collections(I)
+-It doesn't guarentee sequence
+ ---elements cannot be accessed using subscript/index
+  ---It doesn't allow duplicate elments
+
