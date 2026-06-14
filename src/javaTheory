@@ -186,7 +186,7 @@ Shortfalls of an array is , its is fixed in size
 --Solution to this problem is DS
 --popular data structures are linkedlist,stack,queue,binary tree
 -It is intruduced to overcome the shortfalls of arrays
--it provides classed which are implementaions of various well known data sturcutures
+-it provides classed which are implementaions of various well known data strucutures
 
 
 
@@ -200,4 +200,51 @@ set(I):
 -It doesn't guarentee sequence
  ---elements cannot be accessed using subscript/index
   ---It doesn't allow duplicate elments
+
+
+--Stream Api:it is used to process large amount of data
+Declarative programing
+it is processing collection
+
+It allows to process data in declartive way
+enchaces the usabiltity of java collections
+making it easy to iterate and perform tasks aganinst elements in collections
+support sequential and parrallel operations
+not a data structure
+designed for lambdas
+categories of stream operations
+--intermediate op
+--terminal operation
+A stream pieline consist of zero or more intermediate operations and a terminal
+stream is closed once terminal operations is performed
+Different type of stream operation are
+-filter
+-map
+-reduce-
+search
+-sort
+
+--FIle I/O
+
+Stream
+-character Stream
+ -support ASCII and UNICODE character set
+ -root classes:Reader,writer
+-binary stream
+ --support binary data
+ -root classed :InputStream,OutPutStream
+
+ Buffers:
+ --used for performance
+ Temporary memory storage for faster reading & writing
+ --classes:bufferedInputStream,BufferedOutPutstream,BufferedStream,Bufferedwriter
+
+
+ Serilizaion --state of object into byte stream
+
+ process to write java object in binary format to the stream
+ --vice-versa in deserializarion
+
+
+
 
